@@ -20,14 +20,5 @@
                 }
             ]
         }
-    ],
-    "build": {
-        "env": {
-            "CUSTOM_ENV_VARIABLE": "value"
-        },
-        "commands": {
-            "install": "yarn install --frozen-lockfile",
-            "build": "yarn build"
-        }
-    }
-}
+    ]
+} 
