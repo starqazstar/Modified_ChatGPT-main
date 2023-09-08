@@ -17,7 +17,7 @@
     "@fortaine/fetch-event-source": "^3.0.6",
     "@svgr/webpack": "^6.5.1",
     "@vercel/analytics": "^0.1.11",
-    "@pezzo/client": "^latest",
+    "@pezzo/client": "^0.4.9",
     "emoji-picker-react": "^4.4.7",
     "fuse.js": "^6.6.2",
     "mermaid": "^10.1.0",
