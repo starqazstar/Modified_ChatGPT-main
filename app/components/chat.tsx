@@ -1,5 +1,5 @@
 import * as openai from 'openai';
-const api = new openai.ApiV1({ key: 'YOUR_API_KEY' });
+const api = new openai.ApiV1({ key: 'OPENAI_API_KEY' });
 //api.createCompletion({ ... });
 
 import { pezzo } from '../client/pezzoIntegration';
