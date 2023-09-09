@@ -1,4 +1,4 @@
-const openai = require('openai');
+import * as openai from 'openai';
 const api = new openai.ApiV1({ key: 'YOUR_API_KEY' });
 api.createCompletion({ ... });
 
