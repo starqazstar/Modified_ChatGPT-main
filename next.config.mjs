@@ -30,6 +30,17 @@ const nextConfig = {
     };
   },
   webpack(config) {
+    config.module.rules.push(
+      {
+        test: /\.(js|mjs)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+          },
+        },
+      },
     config.module.rules.push({
       test: /\.svg$/,
       use: ["@svgr/webpack"],
