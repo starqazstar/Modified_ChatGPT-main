@@ -55,6 +55,6 @@
         "typescript": "4.9.5",
         "babel-loader": "^8.2.3",
         "@babel/core": "^7.15.5",
-        "@babel/preset-env": "^latest"
+        "@babel/preset-env": "^7.15.6"
     }
 }
