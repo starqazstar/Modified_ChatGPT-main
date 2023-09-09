@@ -33,7 +33,7 @@ const nextConfig = {
     config.module.rules.push(
       {
         test: /\.(js|mjs)$/,
-        exclude: /node_modules/,
+        exclude: /node_modules\/(?!@pezzo\/client)/, // 更新此处的正则表达式
         use: {
           loader: 'babel-loader',
           options: {
