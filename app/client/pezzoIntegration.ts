@@ -11,17 +11,11 @@ export const pezzo = new Pezzo({
 // Initialize the PezzoOpenAI client
 const openai = new PezzoOpenAI(pezzo);
 
-// Fetch the prompt from Pezzo
-const prompt = await pezzo.getPrompt("工作SOP");
+export async function fetchAndCreatePrompt() {
+    // Fetch the prompt from Pezzo
+    const prompt = await pezzo.getPrompt("工作SOP");
 
-// Use the OpenAI API as you normally would
-const response = await openai.chat.completions.create(prompt);
-
-async function initializePezzo() {
-  // Fetch the prompt from Pezzo
-  const prompt = await pezzo.getPrompt("工作SOP");
-  // Use the OpenAI API as you normally would
-  // ... (rest of your code)
+    // Use the OpenAI API as you normally would
+    const response = await openai.chat.completions.create(prompt);
+    return response;
 }
-
-initializePezzo();
