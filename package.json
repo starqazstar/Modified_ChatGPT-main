@@ -52,6 +52,9 @@
         "husky": "^8.0.0",
         "lint-staged": "^13.2.0",
         "prettier": "^2.8.7",
-        "typescript": "4.9.5"
+        "typescript": "4.9.5",
+        "babel-loader": "^latest",
+        "@babel/core": "^latest",
+        "@babel/preset-env": "^latest"
     }
 }
