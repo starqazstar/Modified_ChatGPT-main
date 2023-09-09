@@ -54,7 +54,7 @@
         "prettier": "^2.8.7",
         "typescript": "4.9.5",
         "babel-loader": "^8.2.3",
-        "@babel/core": "^latest",
+        "@babel/core": "^7.15.5",
         "@babel/preset-env": "^latest"
     }
 }
