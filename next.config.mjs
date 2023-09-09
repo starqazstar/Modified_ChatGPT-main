@@ -33,11 +33,22 @@ const nextConfig = {
     config.module.rules.push(
       {
         test: /\.(js|mjs)$/,
-        exclude: /node_modules\/(?!@pezzo\/client)/, // 更新此处的正则表达式
+        exclude: /node_modules\/(?!@pezzo\/client)/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env'],
+            presets: [
+              ['@babel/preset-env', {
+                modules: 'commonjs', // 转换 ES6 模块到 CommonJS
+                targets: '> 0.25%, not dead', // 根据需要选择目标浏览器
+              }],
+              '@babel/preset-react', // 如果你使用 React，可以添加此预设
+            ],
+            plugins: [
+              '@babel/plugin-proposal-class-properties', // 为类属性添加支持
+              '@babel/plugin-proposal-private-methods', // 为私有方法添加支持
+              // 你可以根据需要添加更多的 Babel 插件
+            ],
           },
         },
       },
