@@ -1,4 +1,7 @@
-import * as openai from 'openai';
+const openai = require('openai');
+const api = new openai.ApiV1({ key: 'YOUR_API_KEY' });
+api.createCompletion({ ... });
+
 import { pezzo } from '../client/pezzoIntegration';
 import { useDebouncedCallback } from "use-debounce";
 import { useState, useRef, useEffect, useLayoutEffect } from "react";
